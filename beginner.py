@@ -22,7 +22,7 @@ def get_audio():
             print("Exception: " + str(e))
             return ""
 
-# Main loop
+
 while True:
     text = get_audio()
     if not text:
@@ -62,4 +62,5 @@ while True:
     
     if "exit" in text or "quit" in text or "bye" in text:
         speak("Goodbye! Have a great day!")
+
         break
